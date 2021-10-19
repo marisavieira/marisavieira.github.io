@@ -24,6 +24,32 @@ footer{
     font-size: 35px;
 }
 
+.card-job{
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  text-align: center;
+}
+
+.projeto{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-job .imagem{
+  background-color: black;
+  background-image: url(https://img.freepik.com/fotos-gratis/moldura-quadrada-feita-de-papel-de-lava-exuberante-conceito-minimo-espaco-para-texto-ou-imagem_141856-215.jpg?size=626&ext=jpg);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+}
+
+.card-job p{
+  width: 100%;
+  text-align: center;
+}
+
 header{
   background-color: #fff;
   background-image: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
