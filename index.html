@@ -1,76 +1,148 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Marisa Vieira </title>
-    
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" type="imagem/png" href="imagens/icon_barra.png" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://share-cdn.picrew.me/shareImg/org/202110/338224_yoyCDtC1.png" />
+    <title>Meu portfolio</title>
 </head>
-<body>
-    <nav>
-        <ol>
-            <a href="#"> Home </a>
-            <a href="#"> Portfólio </a>
-            <a href="#"> Participações </a>
-            <a href="paginas/contato.html"> Contato </a>
-        </ol>
-    </nav>
 
+<body>  
+    <!-- -------- HEADER -------- -->
     <header>
-        <div class="conteudoHeader">
-            <img class="imgQuemSouEu" src="imagens/marisa.png">
-            <h1> Olá, eu sou a Marisa </h1>
-            <h2 class="tituloHeader"> Desenvolvedora Front End</h2>
+        <picture>
+            <source srcset="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" media="(min-width: 600px)" alt="Marisa uma mulher branca, dos olhos castanhos, com cabelo cacheados, castanhos e mechas loiras, veste uma blusa de gola alta preta e dá um meio sorriso." style="width:100%">
+            <img src="img/bgl.png" alt="Marisa uma mulher branca, dos olhos castanhos, com cabelo cacheados, castanhos e mechas loiras, veste uma blusa de gola alta preta e dá um meio sorriso." style="width:100%">
+        </picture>
+
+        <div class="introduction">
+            <h1 id="write"> Olá mundo! </h1>
+            <p> Meu nome é Marisa e esse é meu cantinho de trabalho! </p>
         </div>
         
     </header>
 
-    <main>
-        <section class="quemSouEu">
-            <h2 class="titulos"> QUEM SOU EU? </h2>
-            <div class="divQuemSouEu">
-                <img class="imgPerfil" src="imagens/QuemSouEu.jpg">
-                <p class="txtQuemSouEu"> Olá, eu me chamo Marisa Vieira Santos, nascida em São Sebastião do Paraíso - MG e hoje moro em Passos - MG, onde estou cursando o 8° período de Bacharelado em Ciência da Computação. Sou apaixonada em tudo que consigo colocar minha criatividade em prática e aqui você verá um pouco mais sobre esse meu mundo. Seja bem vindo, é uma honra ter você aqui! </p>
+    <!-- -------- SOBRE MIM -------- -->
+    <section class="about-me">
+        <h2 class="title"> SOBRE MIM </h2>
+        <p> Eu me chamo Marisa Vieira Santos, possuo Técnico em Informática e Bacharelado em Ciência da Computação pelo IFSULDEMINAS - Campus Passos. Sou apaixonada em tudo que consigo colocar minha criatividade em prática e aqui você verá um pouco mais sobre esse meu mundo. Estou atuando como web developer há um pouco mais de um ano, buscando sempre novos conhecimentos e tecnologias atuais para o desenvolvimento. Seja bem vinda(o), é uma honra te ter aqui! </p> 
+
+        <h1> Conheça Minha Equipe </h1>        
+        <div class="team">
+
+            <div class="card-team"> 
+                <img class="img-card" src="img/cacau.jpeg">
+                <p class="description-team" style="font-size: 20px; margin: 5px;"> Cacau </p>  
+                <p class="description-team" style="font-size: 15px; margin: 0;"> A cachorra </p> 
             </div>
-            </section>
+    
+            <div class="card-team">
+                <img class="img-card" src="img/marisa.jpeg">
+                <p class="description-team" style="font-size: 20px; margin: 5px;"> Marisa Vieira </p>  
+                <p class="description-team" style="font-size: 15px; margin: 0;"> Web Developer </p>  
+            </div>
+    
+            <div class="card-team">
+                <img class="img-card" src="img/estelo.jpeg">
+                <p class="description-team" style="font-size: 20px; margin: 5px;"> Estelo </p>  
+                <p class="description-team" style="font-size: 15px; margin: 0;"> O gato </p> 
+            </div> 
+        </div>        
 
-        <section class="portfólio">
-            <h2 class="titulos"> PORTFÓLIO </h2>
-            <section class="themePortifolio">
-                <article class="card">
-                    <img class="imgCard" src="imagens/site_encomp.png"> 
-                    <h3 class="titulocard"> Sites </h3>
-                </article>
-                
-                <article class="card">
-                    <img class="imgCard" src="imagens/grace.png"> 
-                    <h3 class="titulocard"> Artes </h3>
-                </article>
-                
-                <article class="card">
-                    <img class="imgCard" src="imagens/foto_estelinho.png"> 
-                    <h3 class="titulocard"> Fotografias </h3>                    
-                </article>
-            </section>
-            <a class="linkVerMais" href="paginas/portfolio.html"> Ver mais </a>
-        </section>
-    </main>
+        <a class="more-information" href="#"> MAIS SOBRE MIM </a> 
+        
+        <!--<p class="teste"> M </p>     -->
+    </section>
 
+    <!-- -------- CONHECIMENTOS -------- -->
+    <section class="skills">
+        <h2 class="title"> SKILLS </h2>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> HTML5 </h4>
+            <div class="bar">
+                <div class="percentage" id="html"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> CSS3 </h4>
+            <div class="bar">
+                <div class="percentage" id="css"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> JavaScript </h4>
+            <div class="bar">
+                <div class="percentage" id="javascript"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> Bootstrap </h4>
+            <div class="bar">
+                <div class="percentage" id="bootstrap"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> ReactJS </h4>
+            <div class="bar">
+                <div class="percentage" id="reactjs"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> TypeScript </h4>
+            <div class="bar">
+                <div class="percentage" id="typescript"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> Adobe Photoshop </h4>
+            <div class="bar">
+                <div class="percentage" id="photoshop"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> Git/GitHub </h4>
+            <div class="bar">
+                <div class="percentage" id="git"></div>
+            </div>
+        </div>
+
+        <div class="card-skills">
+            <h4 style="margin-right: 15px; width: 130px;"> Figma </h4>
+            <div class="bar">
+                <div class="percentage" id="figma"></div>
+            </div>
+        </div>
+        
+        <a class="more-information" href="#"> ACESSE MEU PORTFÓLIO </a>    
+        
+    </section>
+
+    <!-- -------- FOOTER -------- -->
     <footer>
-        <ol>
-            <a href="#"> <i class="fa fa-instagram"></i> </a>
-            <a href="#"> <i class="fa fa-envelope"></i> </a>
-            <a href="#"> <i class="fa fa-whatsapp"></i> </a>
-            <a href="#"> <i class="fa fa-linkedin"></i> </a>
+        
+        <ol>            
+            <a href="https://www.instagram.com/marisavieiras/" target="_blank"> <i class="fa fa-instagram"></i> </a>
+            <a href="mailto:marisavrst@gmail.com" target="_blank"> <i class="fa fa-envelope"></i> </a>
+            <a href="https://api.whatsapp.com/send?phone=5535998182143&amp;text=Ola%20Marisa,%20tudo%20bem?%20" target="_blank"> <i class="fa fa-whatsapp"></i> </a>
+            <a href="https://www.linkedin.com/in/marisa-vieira-santos-6664a2173" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+            <a href="https://www.github.com/marisavieira" target="_blank"> <i class="fa fa-github"></i>  </a>
         </ol>
-        <p> ©2020 Desenvolvido por Marisa Vieira </p>        
+        ©2021 Desenvolvido por Marisa Vieira
     </footer>
 
-    
 </body>
 </html>
